@@ -1,10 +1,10 @@
 # Artificial Intelligence
 
-**Status: Planned track.**
+**Status: In progress.** The first lesson is available; the remaining topics are planned.
 
 ## Planned sequence
 
-- [ ] AI terminology, capabilities, and limitations
+- [x] [AI terminology, capabilities, and limitations](01-terminology/README.md)
 - [ ] Machine learning data, training, validation, and testing
 - [ ] Model metrics, baselines, and error analysis
 - [ ] Use a model through a library or API
