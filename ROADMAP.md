@@ -120,7 +120,7 @@ See the [Cloud track](cloud/README.md). Exercises should identify required accou
 ## 11. Artificial intelligence
 
 - [x] [AI terminology, capabilities, and limitations](ai/01-terminology/README.md)
-- [ ] Machine learning data, training, validation, and testing
+- [x] [Machine learning data, training, validation, and testing](ai/02-data-training-validation-testing/README.md)
 - [ ] Model metrics, baselines, and error analysis
 - [ ] Use a model through a library or API
 - [ ] Generative AI, prompts, and structured outputs

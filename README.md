@@ -33,6 +33,7 @@ The introductory JavaScript lessons require no packages. For challenge projects,
   - [02 — Conditions, comparisons, and decisions](javascript/02-conditions/README.md)
 - **Artificial intelligence**
   - [01 — AI terminology, capabilities, and limitations](ai/01-terminology/README.md)
+  - [02 — Machine learning data, training, validation, and testing](ai/02-data-training-validation-testing/README.md)
 
 ### Planned tracks
 

@@ -1,11 +1,11 @@
 # Artificial Intelligence
 
-**Status: In progress.** The first lesson is available; the remaining topics are planned.
+**Status: In progress.** The first two lessons are available; the remaining topics are planned.
 
 ## Planned sequence
 
 - [x] [AI terminology, capabilities, and limitations](01-terminology/README.md)
-- [ ] Machine learning data, training, validation, and testing
+- [x] [Machine learning data, training, validation, and testing](02-data-training-validation-testing/README.md)
 - [ ] Model metrics, baselines, and error analysis
 - [ ] Use a model through a library or API
 - [ ] Generative AI, prompts, and structured outputs

@@ -103,4 +103,4 @@ Attempt the exercises before opening the [solutions and evaluation guide](soluti
 - [NIST Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — confabulation, bias, and other risks.
 - [Google Machine Learning Glossary](https://developers.google.com/machine-learning/glossary) — additional ML terminology.
 
-[Back to the AI track](../README.md)
+[Next chapter: data, training, validation, and testing](../02-data-training-validation-testing/README.md) · [AI track](../README.md)
