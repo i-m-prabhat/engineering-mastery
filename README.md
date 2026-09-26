@@ -34,6 +34,7 @@ The introductory JavaScript lessons require no packages. For challenge projects,
 - **Artificial intelligence**
   - [01 — AI terminology, capabilities, and limitations](ai/01-terminology/README.md)
   - [02 — Machine learning data, training, validation, and testing](ai/02-data-training-validation-testing/README.md)
+  - [03 — Model metrics, baselines, and error analysis](ai/03-metrics-baselines-error-analysis/README.md)
 
 ### Planned tracks
 

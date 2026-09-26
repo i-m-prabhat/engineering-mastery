@@ -121,7 +121,7 @@ See the [Cloud track](cloud/README.md). Exercises should identify required accou
 
 - [x] [AI terminology, capabilities, and limitations](ai/01-terminology/README.md)
 - [x] [Machine learning data, training, validation, and testing](ai/02-data-training-validation-testing/README.md)
-- [ ] Model metrics, baselines, and error analysis
+- [x] [Model metrics, baselines, and error analysis](ai/03-metrics-baselines-error-analysis/README.md)
 - [ ] Use a model through a library or API
 - [ ] Generative AI, prompts, and structured outputs
 - [ ] Retrieval-augmented generation fundamentals

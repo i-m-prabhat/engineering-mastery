@@ -114,4 +114,4 @@ Try the exercises before opening the [solutions and split-design guide](solution
 - [Google: dividing datasets](https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets)
 - [scikit-learn: common pitfalls](https://scikit-learn.org/stable/common_pitfalls.html)
 
-[Previous chapter](../01-terminology/README.md) · [AI track](../README.md)
+[Previous chapter](../01-terminology/README.md) · [Next chapter: metrics, baselines, and error analysis](../03-metrics-baselines-error-analysis/README.md) · [AI track](../README.md)
