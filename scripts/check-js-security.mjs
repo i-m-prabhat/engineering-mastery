@@ -9,6 +9,8 @@ import path from "node:path";
 const root = path.resolve("javascript");
 const extensions = new Set([".js", ".mjs", ".cjs"]);
 const findings = [];
+// Scan lesson sources, not installed dependencies or generated artifacts.
+const ignoredDirectories = new Set(["node_modules", "dist", "build", "coverage", ".cache", ".parcel-cache", ".nyc_output"]);
 
 const rules = [
   {
@@ -52,7 +54,7 @@ async function collectFiles(directory) {
 
   for (const entry of entries) {
     const fullPath = path.join(directory, entry.name);
-    if (entry.isDirectory()) {
+    if (entry.isDirectory() && !ignoredDirectories.has(entry.name)) {
       files.push(...(await collectFiles(fullPath)));
     } else if (entry.isFile() && extensions.has(path.extname(entry.name))) {
       files.push(fullPath);

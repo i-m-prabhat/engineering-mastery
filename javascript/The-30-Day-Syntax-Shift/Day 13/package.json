@@ -1,0 +1,26 @@
+{
+  "name": "syntax-shift-day-13",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Day 13: local and third-party JavaScript modules",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node solutions.mjs",
+    "demo:local": "node local-modules.mjs",
+    "demo:third-party": "node third-party-modules.mjs",
+    "demo:live": "node third-party-modules.mjs --live",
+    "build": "webpack --config webpack.config.cjs",
+    "demo:bundle": "node dist/bundle.cjs"
+  },
+  "dependencies": {
+    "axios": "1.20.0",
+    "lodash": "4.18.1"
+  },
+  "devDependencies": {
+    "webpack": "5.112.2",
+    "webpack-cli": "7.2.3"
+  }
+}
