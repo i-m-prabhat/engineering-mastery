@@ -4,7 +4,7 @@
 
 ## Changes
 
-- 
+- Briefly describe the key change.
 
 ## Learning impact
 
