@@ -36,13 +36,14 @@ Follow the existing lessons' approachable tone. Keep examples dependency-free un
 
 ## Local validation
 
-Install a supported Node.js version, then run the current examples:
+Install Node.js 22 or a compatible current LTS release, then run the current examples:
 
 ```sh
 node --check javascript/01-basics/examples.js
 node javascript/01-basics/examples.js
 node --check javascript/02-conditions/examples.js
 node javascript/02-conditions/examples.js
+node scripts/check-js-security.mjs
 ```
 
 For all JavaScript lesson files, you can check syntax with:
@@ -51,7 +52,7 @@ For all JavaScript lesson files, you can check syntax with:
 find javascript -type f -name '*.js' -print0 | xargs -0 -n1 node --check
 ```
 
-Pull requests also run the repository's GitHub Actions workflow, which checks JavaScript syntax and smoke-tests each `examples.js` file. If your change is documentation-only, check the affected links and instructions.
+Pull requests run GitHub Actions to check JavaScript syntax, flag selected risky coding patterns and likely hard-coded credentials, and smoke-test each `examples.js` file. The security pattern check is intentionally lightweight: it is not a full static analyzer and does not replace review or secret scanning. If your change is documentation-only, check the affected links and instructions.
 
 ## Submitting a change
 
