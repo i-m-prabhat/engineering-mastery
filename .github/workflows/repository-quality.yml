@@ -21,8 +21,8 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v24
         with:
           globs: |
-            **/*.md
-            !.git/**
+            *.md
+            .github/**/*.md
 
   links:
     name: Validate local Markdown links
