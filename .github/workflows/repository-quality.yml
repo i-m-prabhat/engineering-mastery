@@ -1,0 +1,57 @@
+name: Repository quality
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v24
+        with:
+          globs: |
+            *.md
+            .github/**/*.md
+
+  links:
+    name: Validate local Markdown links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check local links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --verbose --exclude-file .lycheeignore '**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  yaml:
+    name: Validate YAML configuration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install yamllint
+        run: python -m pip install yamllint
+
+      - name: Lint workflow and issue-form YAML
+        run: yamllint --strict .github/workflows .github/ISSUE_TEMPLATE
