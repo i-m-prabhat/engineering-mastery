@@ -6,7 +6,8 @@
     "MD041": false
   },
   "globs": [
-    "**/*.md",
+    "*.md",
+    ".github/**/*.md",
     "!node_modules"
   ],
   "ignores": [
