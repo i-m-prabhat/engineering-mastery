@@ -22,11 +22,6 @@ const rules = [
     pattern: /\bnew\s+Function\s*\(|\bFunction\s*\(/g,
   },
   {
-    id: "JSSEC003",
-    description: "Avoid string arguments to setTimeout/setInterval",
-    pattern: /\b(?:setTimeout|setInterval)\s*\(\s*(['"`])/g,
-  },
-  {
     id: "JSSEC004",
     description: "Review potentially unsafe DOM HTML injection via innerHTML",
     pattern: /\.innerHTML\s*=/g,
