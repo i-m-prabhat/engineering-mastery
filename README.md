@@ -40,6 +40,8 @@ These tracks are roadmap goals. Content will be added incrementally; a directory
 | System design | Caching, queues, scalability, reliability, distributed systems | Planned |
 | Security | OWASP concepts, secure sessions, authorization, API hardening | Planned |
 | DevOps | Linux, Docker, CI/CD, deployment, observability | Planned |
+| [Cloud](cloud/README.md) | Cloud foundations, core services, deployment, infrastructure as code, cost and reliability | Planned |
+| [AI](ai/README.md) | AI and machine learning foundations, model evaluation, generative AI, responsible AI | Planned |
 
 See [ROADMAP.md](ROADMAP.md) for the detailed sequence and progress checklist.
 
