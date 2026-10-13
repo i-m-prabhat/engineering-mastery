@@ -1,0 +1,38 @@
+name: Report an issue
+description: Report an incorrect example, broken link, or confusing lesson
+title: "[Issue]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Issue type
+      options:
+        - Incorrect explanation
+        - Broken or incorrect code example
+        - Broken link
+        - Typo or formatting
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: File or lesson
+      placeholder: javascript/01-basics/README.md
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Include the current behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include commands or a minimal example if relevant.
+    validations:
+      required: false

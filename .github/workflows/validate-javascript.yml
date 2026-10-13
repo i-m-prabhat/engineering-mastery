@@ -1,0 +1,51 @@
+name: Validate JavaScript lessons
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Syntax and example smoke tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(find javascript -type f -name '*.js' | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No JavaScript lesson files found."
+            exit 1
+          fi
+          for file in "${files[@]}"; do
+            echo "Checking $file"
+            node --check "$file"
+          done
+
+      - name: Run lesson examples
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t examples < <(find javascript -type f -name 'examples.js' | sort)
+          if [ "${#examples[@]}" -eq 0 ]; then
+            echo "No lesson examples found."
+            exit 1
+          fi
+          for file in "${examples[@]}"; do
+            echo "Running $file"
+            node "$file"
+          done

@@ -1,53 +1,78 @@
-# engineering-mastery
+# Engineering Mastery
 
-An open, hands-on path through software engineering fundamentals. The lessons are written for people learning by reading short explanations, running code, solving exercises, and reflecting on what they learned.
+A practical, open-source path to learning software engineering — one concept, runnable example, and exercise at a time.
 
-The project is growing in the open. You can help by improving an explanation, fixing a typo, adding an example, or proposing a new lesson.
+The goal is not to collect notes. It is to build understanding through small lessons, practice, and the engineering habits used to ship reliable software.
 
-## Getting started
+## Start here
 
-1. Install [Node.js](https://nodejs.org/) (which includes `node`).
-2. Clone or download this repository and open it in a terminal.
-3. Run a lesson's examples. For example:
+1. Install [Node.js](https://nodejs.org/) (the current LTS version is recommended).
+2. Clone this repository and open a terminal in its root.
+3. Run an example:
 
    ```sh
    node javascript/01-basics/examples.js
    ```
 
-4. Try the exercises in that lesson's `exercises.js` file. Follow its instructions for writing and running your answers.
-5. Read the lesson README if you want the concepts and exercises together.
+4. Read the lesson README, try the exercises, and compare your work with the separate solutions file.
 
-No package installation is needed for the current lessons.
+The current JavaScript lessons have no package-installation requirement.
 
-## Learning path
+## Learning tracks
 
-### Available now
+### Available lessons
 
 - **JavaScript**
-  1. [Your first program, variables, and data types](javascript/01-basics/README.md)
-  2. [Making decisions: comparisons and `if` / `else`](javascript/02-conditions/README.md)
+  - [01 — First program, variables, and data types](javascript/01-basics/README.md)
+  - [02 — Conditions, comparisons, and decisions](javascript/02-conditions/README.md)
 
-### Planned
+### Planned tracks
 
-Topics below are ideas for the learning path, not promises or prerequisites. Suggestions and contributions are welcome.
+These tracks are roadmap goals. Content will be added incrementally; a directory or roadmap item does not mean the full track is already complete.
 
-- JavaScript functions, loops, arrays, objects, and error handling
-- Git and collaboration workflows
-- Testing and debugging
-- Web fundamentals and APIs
-- Databases and backend development
-- System design, security, and scalable systems
+| Track | What it will cover | Status |
+| --- | --- | --- |
+| JavaScript | Fundamentals, functions, arrays, objects, async programming, event loop | In progress |
+| TypeScript | Type system, narrowing, generics, utility types, practical patterns | Planned |
+| Data structures & algorithms | Complexity, arrays, maps, stacks, trees, graphs, sorting | Planned |
+| Backend engineering | Node.js, HTTP, REST APIs, validation, authentication, testing | Planned |
+| Databases | SQL, MongoDB, indexes, transactions, query design | Planned |
+| System design | Caching, queues, scalability, reliability, distributed systems | Planned |
+| Security | OWASP concepts, secure sessions, authorization, API hardening | Planned |
+| DevOps | Linux, Docker, CI/CD, deployment, observability | Planned |
 
-## How to contribute
+See [ROADMAP.md](ROADMAP.md) for the detailed sequence and progress checklist.
 
-Contributions of all sizes are welcome, including corrections, clearer explanations, runnable examples, exercises, and new lessons. If you are considering a large change, open an issue first so we can agree on the scope.
+## What a lesson should include
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the lesson format and contribution workflow, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community expectations.
+Where relevant, lessons should offer:
 
-## Project status
+- Clear learning objectives and plain-language explanations
+- Runnable examples with expected output
+- Common mistakes and real-world context
+- Exercises with requirements or test cases
+- Separate solutions with explanations
+- Links to official documentation and further reading
 
-This is an evolving learning resource. The existing JavaScript lessons are the starting point; planned topics may change as the project and learner feedback grow.
+Use [the lesson template](docs/LESSON_TEMPLATE.md) when creating a new lesson.
+
+## Contributing
+
+First-time contributors are welcome. Fix a typo, improve an explanation, add an example, or propose a new lesson.
+
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+- Follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+- Use the issue forms/templates in `.github/ISSUE_TEMPLATE/` to suggest work or report a problem.
+- Pull requests run automated JavaScript syntax checks and example smoke tests.
+
+## Project principles
+
+- **Learn by doing:** explanations are paired with practice.
+- **Small, reviewable changes:** prefer focused lessons over giant submissions.
+- **Correctness over breadth:** planned topics are clearly marked until content exists.
+- **Open collaboration:** feedback should be respectful and beginner-friendly.
+- **Keep it approachable:** avoid dependencies unless they teach something important.
 
 ## License
 
-This project is released into the public domain under the [Unlicense](LICENSE).
+Released into the public domain under the [Unlicense](LICENSE).
