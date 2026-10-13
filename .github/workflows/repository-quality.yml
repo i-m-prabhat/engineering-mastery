@@ -34,7 +34,7 @@ jobs:
       - name: Check local links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --offline --no-progress --verbose '**/*.md'
+          args: --offline --no-progress --verbose --exclude-file .lycheeignore '**/*.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
