@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   validate:
-    name: Syntax, security, and example smoke tests
+    name: Syntax and example smoke tests
     runs-on: ubuntu-latest
     permissions:
       contents: read
