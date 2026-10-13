@@ -104,6 +104,32 @@ This roadmap is an evolving guide, not a promise that every topic is already ava
 - [ ] Deployment health checks
 - [ ] Metrics, logs, and alerting
 
+## 10. Cloud computing
+
+- [ ] Cloud service models and shared responsibility
+- [ ] Regions, availability zones, and resilience
+- [ ] Compute, storage, networking, and managed databases
+- [ ] Identity, access management, and least privilege
+- [ ] Deploy an application to a cloud environment
+- [ ] Infrastructure as code and repeatable environments
+- [ ] Cloud monitoring, backups, and reliability
+- [ ] Cost estimation, budgets, and cleanup
+
+See the [Cloud track](cloud/README.md). Exercises should identify required accounts and possible costs before learners create resources.
+
+## 11. Artificial intelligence
+
+- [ ] AI terminology and capabilities
+- [ ] Machine learning data, training, validation, and testing
+- [ ] Model metrics, baselines, and error analysis
+- [ ] Use a model through a library or API
+- [ ] Generative AI, prompts, and structured outputs
+- [ ] Retrieval-augmented generation fundamentals
+- [ ] Privacy, bias, safety, and responsible use
+- [ ] Evaluate, monitor, and operate an AI feature
+
+See the [AI track](ai/README.md). Exercises should explain their evaluation approach, protect private data, and disclose paid services or model limitations.
+
 ## Contribution rule
 
 Only mark a topic complete after its lesson, examples, exercises, and any promised checks are reviewed. Open an issue before starting a large new track so contributors can coordinate.
