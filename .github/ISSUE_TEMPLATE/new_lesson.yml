@@ -1,0 +1,37 @@
+name: Propose a lesson
+description: Suggest a new topic or lesson for Engineering Mastery
+title: "[Lesson]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping grow the learning path. Please search existing issues first."
+  - type: input
+    id: topic
+    attributes:
+      label: Proposed topic
+      description: What concept should the lesson teach?
+      placeholder: JavaScript closures
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Learning outcomes
+      description: What should a learner be able to do afterward?
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites and placement
+      description: Which earlier topics should learners know, and where should this fit in the roadmap?
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example or exercise ideas
+      description: Share a practical scenario, expected output, or exercise idea.
+    validations:
+      required: false
