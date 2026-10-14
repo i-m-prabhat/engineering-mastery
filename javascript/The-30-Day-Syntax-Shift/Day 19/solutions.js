@@ -1,0 +1,10 @@
+"use strict";
+const { runExtractionDemo } = require("./text-extraction");
+const { runValidationDemo } = require("./input-validation");
+const { runWhitespaceDemo } = require("./whitespace-normalization");
+const { runRegexFeatureDemo } = require("./regex-features");
+runExtractionDemo();
+runValidationDemo();
+runWhitespaceDemo();
+runRegexFeatureDemo();
+console.log("All six task demonstrations finished.");
