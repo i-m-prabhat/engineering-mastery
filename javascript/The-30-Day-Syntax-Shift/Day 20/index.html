@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day 20: Browser Storage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="solutions.js" defer></script>
+</head>
+<body>
+<header><p class="eyebrow">The 30-Day Syntax Shift / Day 20</p><h1>Browser Storage</h1>
+  <p>Compare localStorage and sessionStorage using fictional practice data.</p>
+  <p id="status" role="status">Ready to explore.</p>
+</header>
+<main>
+  <section><h2>1–4. Local storage</h2>
+    <button id="local-string" type="button">Save local string</button>
+    <button id="local-object" type="button">Save local object</button>
+    <form id="local-form">
+      <label for="local-name">Local practice name</label><input id="local-name" name="name" required maxlength="60">
+      <label for="local-email">Local practice email</label><input id="local-email" name="email" type="email" required maxlength="120">
+      <button type="submit">Save local profile</button>
+    </form>
+    <button id="remove-local" type="button">Remove local string</button>
+    <pre id="local-output" aria-label="Local storage values"></pre>
+  </section>
+  <section><h2>5–8. Session storage</h2>
+    <button id="session-string" type="button">Save session string</button>
+    <button id="session-object" type="button">Save session object</button>
+    <form id="session-form">
+      <label for="session-name">Session practice name</label><input id="session-name" name="name" required maxlength="60">
+      <label for="session-email">Session practice email</label><input id="session-email" name="email" type="email" required maxlength="120">
+      <button type="submit">Save session profile</button>
+    </form>
+    <button id="remove-session" type="button">Remove session string</button>
+    <pre id="session-output" aria-label="Session storage values"></pre>
+  </section>
+  <section><h2>9. Compare stores</h2>
+    <form id="compare-form">
+      <label for="compare-value">Practice value for both stores</label><input id="compare-value" value="Day 20" required maxlength="120">
+      <button type="submit">Save to both stores</button>
+    </form>
+    <pre id="compare-output"></pre>
+    <button id="reload-page" type="button">Reload and restore forms</button>
+    <p>A new independent tab shares local data but has its own session data. This tab retains both across reload.</p>
+  </section>
+  <section><h2>10. Clear this practice origin</h2>
+    <p>Use the supplied dedicated localhost server. This action clears all local and session entries for this origin in this tab.</p>
+    <button id="clear-storage" type="button">Clear both stores</button>
+    <p id="clear-output">No clear performed.</p>
+  </section>
+</main>
+<footer>Use a fictional address such as learner@example.test. Open developer tools to inspect Application → Storage and the Console.</footer>
+</body>
+</html>
