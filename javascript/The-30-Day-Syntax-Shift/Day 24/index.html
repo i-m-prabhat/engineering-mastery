@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 24: Weather App</title><link rel="stylesheet" href="styles.css">
+<script type="module" src="solutions.mjs"></script></head>
+<body>
+<header><p class="eyebrow">The 30-Day Syntax Shift / Day 24</p><h1>A little weather outlook.</h1>
+<p>Find your city and explore the next five days, starting today.</p></header>
+<main>
+<form id="search-form">
+<label for="city">City name</label><div class="search-row"><input id="city" name="city" value="Delhi" maxlength="120" placeholder="City, country" autocomplete="off"><button type="submit">Find weather</button></div>
+<label for="mode">Data mode</label><select id="mode"><option value="live">Live weather</option><option value="sample">Sample data — offline practice</option><option value="failure">Practice a failed request</option></select>
+<p class="hint">Offline sample cities: Delhi, London, Berlin. Live search shows the first location match.</p>
+</form>
+<p id="status" role="status">Search for a city to get started.</p>
+<section id="results" aria-label="Weather results" aria-busy="false" hidden>
+<div class="current"><div><p id="data-label" class="eyebrow"></p><h2 id="city-name"></h2><p id="observed"></p></div>
+<div><span id="current-icon" class="hero-icon" aria-hidden="true"></span><p id="temperature" class="temperature"></p><p id="condition"></p></div></div>
+<h2>Five-day forecast</h2><p id="forecast-zone" class="hint"></p><div id="forecast" class="forecast"></div>
+</section>
+</main>
+<footer>Weather: <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>. Location search uses GeoNames through Open-Meteo. Sample mode is fictional fixed-date practice data, not a current report.</footer>
+</body></html>
