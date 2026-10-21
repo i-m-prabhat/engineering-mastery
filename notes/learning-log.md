@@ -24,3 +24,18 @@ After each lesson, write what you learned **in your own words**. Explaining some
 - **Lesson 1 review:** `"2" + 3 + 1` is `"231"` because `+` works left to right, and once a string appears, every `+` after it joins text. I got this right this time!
 - **A mistake I made:** In exercise 10, I wrote `visitorAge === 60`. It gave the expected output for age 10, but a 70-year-old got the child price. It should be `>= 60`. **Getting the right output for one input doesn't prove the code works, so I need to test every path with different values.**
 - **What's next:** In exercise 8 I wrote the same if/else 7 times. Functions should let me write it once and reuse it.
+
+## Lesson 3: Functions
+
+- **Defining vs Calling:** Defining a function (`function name() {}`) is writing the recipe—nothing runs yet. Calling it with parentheses `()` is what actually executes it.
+- **Parameters vs Arguments:** Parameters are the placeholders in the function definition (like `n` in `function square(n)`). Arguments are the concrete values passed during the call (like `10` in `square(10)`).
+- **`return` vs `console.log`:** Functions should calculate and `return` values so other code can use the result. `console.log` only prints to terminal. If a function lacks a `return` statement, it returns `undefined` by default (seen in Exercise 1 with `doubleAndPrint`).
+- **Default parameters:** Writing `calculateTotal(price, quantity, delivery = 40)` sets a fallback value if delivery isn't provided, while still allowing callers to override it (even with `0`).
+- **Arrow functions:** Short arrow syntax like `const isAdult = age => age >= 18;` allows writing clean one-liners with implicit returns (no `{}` and no `return` keyword needed).
+- **Function composition:** Functions can call other functions. In Exercise 9, `getDaysInFebruary` reuses `isLeapYear`, and `getGroupTotal` reuses `getTicketPrice`. This keeps logic clean and prevents repeating rules.
+- **Function and block scope:** Variables declared inside a function (`rover`) are private to that function and cannot be accessed from outside (`ReferenceError`). However, functions can access variables in the outer/global scope (`planet`).
+- **Bugs and key lessons (Exercise 11):**
+  - Any code written after a `return` statement is unreachable and will never execute.
+  - Always verify argument count and order when calling functions—swapping `name` and `price` messes up the template literal.
+- **What's next:** Organizing multiple values into arrays and automating repetition with loops.
+
