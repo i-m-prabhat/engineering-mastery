@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 27: Task Manager</title><link rel="stylesheet" href="styles.css"><script type="module" src="solutions.mjs"></script></head>
+<body><header><p class="eyebrow">The 30-Day Syntax Shift / Day 27</p><h1>Make room for progress.</h1><p>A small list for what matters next. Tasks stay in this browser.</p></header>
+<main><section class="editor"><h2 id="form-heading">Add a task</h2><form id="task-form"><fieldset id="task-fields">
+<label for="title">Task title</label><input id="title" maxlength="100" placeholder="What would you like to do?" autocomplete="off">
+<label for="description">Description <span class="hint">(optional)</span></label><textarea id="description" maxlength="600" rows="3"></textarea>
+<div class="row"><button id="save-task" type="submit">Add task</button><button id="cancel-edit" type="button" class="secondary" hidden>Cancel edit</button></div></fieldset></form>
+<p id="status" role="status">Ready.</p><button id="reset-storage" type="button" hidden>Reset invalid saved task data</button></section>
+<section class="tasks-panel" aria-label="Your tasks"><div class="list-heading"><h2>Your tasks</h2><p id="counts"></p></div>
+<label for="filter">Show tasks</label><select id="filter"><option value="all">All</option><option value="active">Active</option><option value="completed">Completed</option></select>
+<p id="empty"></p><ul id="task-list"></ul></section></main>
+<footer>No account, server database, or network API is used. Local storage is scoped to this browser and origin.</footer></body></html>

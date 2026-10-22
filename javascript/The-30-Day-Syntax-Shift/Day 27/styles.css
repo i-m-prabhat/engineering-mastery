@@ -1,0 +1,23 @@
+:root { font-family:system-ui,sans-serif; color:#263b35; background:#f1f5ef; line-height:1.6; }
+* { box-sizing:border-box; } body { max-width:1060px; margin:0 auto; padding:36px 22px; }
+h1 { font-size:clamp(2.2rem,5vw,3.8rem); line-height:1.12; letter-spacing:-.04em; margin:12px 0; }
+.eyebrow { text-transform:uppercase; font-size:.75rem; letter-spacing:.12em; color:#52705e; font-weight:700; } header { margin-bottom:30px; }
+main { display:grid; grid-template-columns:1fr 1.3fr; gap:22px; align-items:start; }
+.editor,.tasks-panel { border:1px solid #ceddcd; border-radius:16px; background:white; padding:24px; }
+h2 { margin:0 0 16px; font-size:1.4rem; } fieldset { border:0; margin:0; padding:0; min-width:0; }
+label { display:block; font-weight:600; } input,textarea,select,button { font:inherit; padding:10px 12px; border-radius:7px; }
+input,textarea,select { border:1px solid #80967f; color:inherit; background:white; }
+#title,textarea { width:100%; margin:6px 0 18px; } textarea { resize:vertical; }
+button { border:1px solid #315e45; background:#315e45; color:white; cursor:pointer; transition:background .15s; }
+button:hover { background:#1d3d2b; } .secondary { color:#315e45; background:white; } .secondary:hover { background:#edf4ee; }
+button:disabled { opacity:.5; cursor:default; } :focus-visible { outline:3px solid #b5751c; outline-offset:3px; }
+.row { display:flex; gap:10px; flex-wrap:wrap; } .hint,footer { color:#5c705e; font-size:.88rem; } #status { margin-bottom:0; }
+#reset-storage { margin-top:14px; } #counts { color:#5c705e; margin-top:0; }
+#task-list { list-style:none; padding:0; margin:18px 0 0; } .task { border-top:1px solid #d9e3d7; padding:18px 0; animation:appear .15s ease-out; }
+.toggle-label { display:flex; gap:12px; align-items:start; } .toggle-label input { margin-top:6px; width:18px; height:18px; accent-color:#315e45; }
+.task-title { overflow-wrap:anywhere; } .completed .task-title { text-decoration:line-through; color:#647064; }
+.task-description { white-space:pre-wrap; overflow-wrap:anywhere; margin:8px 0; } .task-state { font-size:.8rem; color:#5c705e; }
+footer { margin-top:26px; } [hidden] { display:none!important; }
+@keyframes appear { from { opacity:0; } to { opacity:1; } }
+@media(max-width:720px) { main { grid-template-columns:1fr; } body { padding:24px 14px; } }
+@media(prefers-reduced-motion:reduce) { * { animation:none!important; transition:none!important; } }
