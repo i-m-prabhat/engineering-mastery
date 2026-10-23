@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 28: Practice Store</title><link rel="stylesheet" href="styles.css"><script type="module" src="solutions.mjs"></script></head>
+<body><header><p class="eyebrow">The 30-Day Syntax Shift / Day 28</p><h1>Small tools. Good habits.</h1><p>A fictional store built to practice JavaScript. No purchases or payments are made.</p></header>
+<main><section aria-label="Products"><h2>The collection</h2><div id="products" class="products"></div></section>
+<aside><section class="panel" aria-label="Shopping cart"><h2 id="cart-heading" tabindex="-1">Your cart</h2><p id="cart-count"></p><p id="cart-empty">Your cart is empty.</p><ul id="cart-items"></ul>
+<p id="subtotal" class="total"></p><p class="hint">Practice total only. Shipping and tax are not modeled. Quantities: 1–9 per item.</p></section>
+<section class="panel"><h2>Mock checkout</h2><form id="checkout-form"><fieldset id="checkout-fields" disabled>
+<label for="customer-name">Fictional name</label><input id="customer-name" maxlength="80" required autocomplete="off">
+<label for="address">Fictional address</label><textarea id="address" rows="2" maxlength="240" required autocomplete="off"></textarea>
+<label for="payment">Payment option</label><select id="payment"><option value="practice">Practice payment — no charge</option></select>
+<button type="submit">Place mock order</button></fieldset></form><p class="hint">Use invented details only. Nothing is sent or saved.</p></section></aside>
+<section id="confirmation" class="panel confirmation" hidden aria-labelledby="order-heading"><h2 id="order-heading">Last mock order</h2><div id="order-details"></div></section>
+<p id="status" role="status">Add a product to get started.</p></main>
+<footer>All products and artwork are fictional. Cart state resets on reload.</footer></body></html>
