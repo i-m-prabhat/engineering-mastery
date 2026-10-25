@@ -45,7 +45,7 @@ Create multiple students, confirm the counter, exercise the name setter, and ver
 - [getters-setters.js](getters-setters.js): full-name reads, edits, and validation.
 - [private-account.js](private-account.js): private balance, deposits, withdrawals, and independent instances.
 - [notes.md](notes.md): explanations, common mistakes, and review questions.
-- [.gitignore](.gitignore): day-local generated-file exclusions.
+- [Shared ignore rules](../.gitignore): generated-file exclusions for all challenge days.
 
 ## Run the Solutions
 

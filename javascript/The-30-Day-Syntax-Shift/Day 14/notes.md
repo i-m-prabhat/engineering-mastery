@@ -78,7 +78,7 @@ For actual fractional currencies, a separate design would be needed. This exampl
 
 person.js, student.js, and account.js export reusable classes through CommonJS. The feature scripts export demo functions and run them directly only when launched as entry points.
 
-solutions.js invokes all feature demos. No packages or network are needed. Generated files and private environment files are covered by the day-local and shared ignore rules.
+solutions.js invokes all feature demos. No packages or network are needed. Generated files and private environment files are covered by the shared challenge ignore rules.
 
 ## Common mistakes
 
