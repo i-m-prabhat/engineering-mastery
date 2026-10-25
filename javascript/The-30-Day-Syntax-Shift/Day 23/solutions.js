@@ -1,0 +1,12 @@
+"use strict";
+const { runMedianDemo } = require("./median-sorted-arrays");
+const { runMergeDemo } = require("./merge-k-lists");
+const { runRainDemo } = require("./trapping-rain-water");
+const { runQueensDemo } = require("./n-queens");
+const { runLadderDemo } = require("./word-ladder");
+runMedianDemo();
+runMergeDemo();
+runRainDemo();
+runQueensDemo();
+runLadderDemo();
+console.log("All five challenge demonstrations finished.");

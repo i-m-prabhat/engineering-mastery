@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day 09: DOM Manipulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="solutions.js" defer></script>
+</head>
+<body>
+  <header><p class="eyebrow">The 30-Day Syntax Shift / Day 09</p><h1>DOM Manipulation</h1>
+    <p>Try each control, inspect the page, then read its solution. Reload to reset every example.</p>
+    <p id="status" role="status">Ready to explore.</p>
+  </header>
+  <main>
+    <section><h2>1–2. Select and update</h2>
+      <p id="intro">This text is waiting for an update.</p>
+      <button id="change-text" type="button">Change text by ID</button>
+      <p class="color-target">Select me by my class to change my background.</p>
+      <button id="change-background" type="button">Change background by class</button>
+    </section>
+    <section><h2>3–4. Create elements</h2>
+      <button id="create-div" type="button">Append a div to body</button>
+      <p>New divs appear after the page footer.</p>
+      <ul id="reading-list"><li>Variables</li><li>Functions</li></ul>
+      <button id="add-item" type="button">Add a list item</button>
+    </section>
+    <section><h2>5–6. Remove elements</h2>
+      <p id="removable">Remove this paragraph.</p>
+      <button id="remove-element" type="button">Remove paragraph</button>
+      <ul id="removal-list"><li>First item</li><li>Second item</li><li>Third item</li></ul>
+      <button id="remove-last" type="button">Remove last list child</button>
+    </section>
+    <section><h2>7. Modify attributes</h2>
+      <img id="scene" src="day.svg" alt="Sun above a daytime landscape" width="240" height="120">
+      <button id="change-image" type="button">Change image to night</button>
+    </section>
+    <section><h2>8. Add and remove classes</h2>
+      <p id="class-target">Highlight this paragraph without replacing its other classes.</p>
+      <button id="add-class" type="button">Add highlight class</button>
+      <button id="remove-class" type="button">Remove highlight class</button>
+    </section>
+    <section><h2>9–10. Handle events</h2>
+      <p id="event-text">Click the button to update this paragraph.</p>
+      <button id="event-button" type="button">Update paragraph on click</button>
+      <button id="hover-target" type="button">Hover or focus to change my border</button>
+      <p>Moving away or leaving keyboard focus restores the border.</p>
+    </section>
+  </main>
+  <footer>All examples run locally. Reload this page to start again.</footer>
+</body>
+</html>

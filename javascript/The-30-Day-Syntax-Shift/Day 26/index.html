@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 26: Local Chat</title><link rel="stylesheet" href="styles.css"><script src="solutions.js" defer></script></head>
+<body><header><p class="eyebrow">The 30-Day Syntax Shift / Day 26</p><h1>A room for conversation.</h1><p>Open this page in two tabs to exchange local, real-time messages.</p></header>
+<main><section class="join-panel"><form id="join-form"><label for="username">Display name</label><div class="row"><input id="username" minlength="2" maxlength="24" placeholder="Demo Learner" autocomplete="off"><button id="join" type="submit">Join chat</button><button id="leave" type="button" disabled>Leave chat</button></div></form>
+<p id="status" role="status">Disconnected. Choose a display name to join.</p><p id="online">Online: 0</p><p class="hint">Names are display labels, not verified accounts. Messages are not saved.</p></section>
+<section class="chat-panel" aria-label="Chat room"><ol id="messages" role="log" aria-label="Chat messages" aria-live="polite" aria-relevant="additions"></ol>
+<form id="message-form"><label for="message">Message</label><div class="row"><input id="message" maxlength="500" placeholder="Write a message…" disabled autocomplete="off"><button id="send" type="submit" disabled>Send message</button></div></form></section></main>
+<footer>This practice server listens only on your computer. Use fictional names and practice messages.</footer></body></html>

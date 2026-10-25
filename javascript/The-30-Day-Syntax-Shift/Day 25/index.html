@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 25: Movie Search</title><link rel="stylesheet" href="styles.css">
+<script type="module" src="solutions.mjs"></script></head><body>
+<header><p class="eyebrow">The 30-Day Syntax Shift / Day 25</p><h1>Find your next story.</h1><p>Search titles, explore the details, and build your JavaScript skills.</p></header>
+<main><form id="search-form"><label for="query">Movie title</label><div class="search-row"><input id="query" value="journey" maxlength="100" placeholder="Search a movie title"><button type="submit">Search movies</button></div>
+<label for="mode">Data mode</label><select id="mode"><option value="sample">Sample movies — offline practice</option><option value="live">Live OMDb movies — server API key required</option></select>
+<p class="hint">Sample mode contains fictional movies. Try journey. Live search shows the first result page, up to ten movies.</p></form>
+<p id="status" role="status">Search to explore movies.</p><section id="results" class="results" aria-label="Movie search results" aria-busy="false"></section>
+<dialog id="details" aria-labelledby="detail-title"><button id="close-details" class="close" type="button">Close details</button>
+<h2 id="detail-title">Movie details</h2><p id="detail-status" role="status"></p><div id="detail-body"></div></dialog></main>
+<footer>Live metadata: <a href="https://www.omdbapi.com/" target="_blank" rel="noreferrer">OMDb API</a>. Fictional sample titles, cast, and artwork are included for offline learning. No search history is saved.</footer>
+</body></html>

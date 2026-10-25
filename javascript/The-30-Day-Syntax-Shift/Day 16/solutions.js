@@ -1,0 +1,12 @@
+"use strict";
+const { runNumberDemo } = require("./factorial-fibonacci");
+const { runArrayDemo } = require("./array-recursion");
+const { runStringDemo } = require("./string-recursion");
+const { runSearchDemo } = require("./recursive-search");
+const { runTreeDemo } = require("./tree-traversal");
+runNumberDemo();
+runArrayDemo();
+runStringDemo();
+runSearchDemo();
+runTreeDemo();
+console.log("All ten task demonstrations finished, including optional tree tasks.");

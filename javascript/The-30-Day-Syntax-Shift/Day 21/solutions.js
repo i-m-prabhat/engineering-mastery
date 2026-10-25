@@ -1,0 +1,12 @@
+"use strict";
+const { runTwoSumDemo } = require("./two-sum");
+const { runReverseDemo } = require("./reverse-integer");
+const { runPalindromeDemo } = require("./palindrome-number");
+const { runMergeDemo } = require("./merge-sorted-lists");
+const { runParenthesesDemo } = require("./valid-parentheses");
+runTwoSumDemo();
+runReverseDemo();
+runPalindromeDemo();
+runMergeDemo();
+runParenthesesDemo();
+console.log("All five challenge demonstrations finished.");

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day 10: Event Handling</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="solutions.js" defer></script>
+</head>
+<body>
+  <header><p class="eyebrow">The 30-Day Syntax Shift / Day 10</p><h1>Event Handling</h1>
+    <p>Explore mouse, keyboard, form, and delegated events. Reload to reset.</p>
+    <p id="status" role="status">Ready to explore.</p>
+  </header>
+  <main>
+    <section><h2>1. Click events</h2>
+      <p id="click-text">Waiting for a click.</p>
+      <button id="click-button" type="button">Change paragraph text</button>
+    </section>
+    <section><h2>2. Double-click and visibility</h2>
+      <div id="image-area"><img id="demo-image" src="landscape.svg" alt="Sun above a green mountain landscape" width="240" height="120"></div>
+      <p>Double-click the image to hide it. Use the button to hide or restore it.</p>
+      <button id="toggle-image" type="button" aria-controls="demo-image" aria-expanded="true">Hide image</button>
+    </section>
+    <section><h2>3–4. Mouse events</h2>
+      <button id="mouse-target" type="button">Hover or focus here</button>
+      <p id="mouse-state">Pointer outside; keyboard focus outside.</p>
+    </section>
+    <section><h2>5–6. Keyboard events</h2>
+      <label for="keyboard-input">Practice text</label>
+      <input id="keyboard-input" type="text" autocomplete="off">
+      <p id="key-output">Last key: none</p>
+      <p id="value-output">Current value: (empty)</p>
+      <p>Keydown logs the key; keyup displays the latest value. Input also handles paste.</p>
+    </section>
+    <section><h2>7. Form submission</h2>
+      <form id="practice-form">
+        <label for="learner-name">Practice name</label>
+        <input id="learner-name" name="learnerName" type="text" required maxlength="60">
+        <button type="submit">Submit practice form</button>
+      </form>
+      <p id="form-output">No form submitted.</p>
+      <p>Use fictional practice text. Submission stays on this page.</p>
+    </section>
+    <section><h2>8. Change events</h2>
+      <label for="topic-select">Choose a topic</label>
+      <select id="topic-select">
+        <option value="">Select a topic</option>
+        <option value="click">Click events</option>
+        <option value="keyboard">Keyboard events</option>
+        <option value="delegation">Event delegation</option>
+      </select>
+      <p id="selection-output">Selected value: (none)</p>
+    </section>
+    <section class="wide"><h2>9–10. Event delegation</h2>
+      <p>One listener on the list handles its existing and future buttons. Clicking an item's nested text works too.</p>
+      <ul id="topic-list">
+        <li><button type="button"><span>Variables</span></button></li>
+        <li><button type="button"><span>Functions</span></button></li>
+      </ul>
+      <button id="add-topic" type="button">Add a dynamic item</button>
+      <p id="delegation-output">No item selected.</p>
+    </section>
+  </main>
+  <footer>Open the browser console to see key, form, and list event logs.</footer>
+</body>
+</html>

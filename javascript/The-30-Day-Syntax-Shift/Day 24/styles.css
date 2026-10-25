@@ -1,0 +1,34 @@
+:root { font-family: system-ui,sans-serif; color: #163c40; background: #edf4f5; line-height: 1.6; }
+* { box-sizing: border-box; }
+body { max-width: 1080px; margin: 0 auto; padding: 40px 24px; }
+header { padding: 12px 0 24px; }
+h1 { font-size: clamp(2.3rem,6vw,4rem); line-height: 1.12; letter-spacing: -.04em; margin: 12px 0; }
+h2 { line-height: 1.3; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .76rem; font-weight: 700; color: #41666b; }
+form, #results { background: white; border: 1px solid #ccdee0; border-radius: 18px; padding: 26px; }
+label { display: block; font-weight: 650; margin-bottom: 6px; }
+.search-row { display: flex; gap: 10px; margin-bottom: 18px; }
+input,select,button { font: inherit; border-radius: 8px; padding: 10px 14px; }
+input,select { border: 1px solid #76969b; color: inherit; background: white; }
+input { flex: 1; min-width: 0; }
+button { color: white; background: #1b6269; border: 1px solid #1b6269; cursor: pointer; transition: background .15s; }
+button:hover { background: #123f44; }
+:focus-visible { outline: 3px solid #c96b13; outline-offset: 3px; }
+.hint,footer,#observed { color: #49666b; font-size: .9rem; }
+#status { min-height: 28px; margin: 20px 0; }
+.current { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 22px; border-bottom: 1px solid #dae5e6; }
+.current p { margin: 6px 0; }
+.hero-icon { font-size: 3rem; }
+.temperature { font-size: 2.8rem; font-weight: 700; line-height: 1.1; }
+.forecast { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }
+.day-card { background: #eff6f6; border-radius: 12px; padding: 16px 10px; text-align: center; }
+.day-card time { font-size: .85rem; }
+.day-card p { margin: 8px 0; }
+.day-icon { display: block; font-size: 2rem; margin-top: 10px; }
+#results { animation: appear .2s ease-out; }
+[hidden] { display:none!important; }
+footer { margin-top: 28px; }
+a { color: #185c64; }
+@keyframes appear { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+@media (max-width:720px) { .forecast { grid-template-columns: repeat(2,minmax(0,1fr)); } .current { flex-direction:column; } body { padding:24px 14px; } .search-row { flex-direction:column; } select { width:100%; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } }

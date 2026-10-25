@@ -4,6 +4,12 @@ A practical, open-source path to learning software engineering — one concept, 
 
 The goal is not to collect notes. It is to build understanding through small lessons, practice, and the engineering habits used to ship reliable software.
 
+## The 30-Day Syntax Shift
+
+[Start the 30-day JavaScript challenge](javascript/The-30-Day-Syntax-Shift/README.md) and learn by building, from variables and functions to algorithms and complete apps. Every day includes challenges, runnable solutions, learning notes, and setup instructions.
+
+[Begin Day 01: Variables and Data Types](javascript/The-30-Day-Syntax-Shift/Day%2001/README.md), or choose a day from the challenge roadmap.
+
 ## Start here
 
 1. Install [Node.js](https://nodejs.org/) (the current LTS version is recommended).
@@ -16,7 +22,7 @@ The goal is not to collect notes. It is to build understanding through small les
 
 4. Read the lesson README, try the exercises, and compare your work with the separate solutions file.
 
-The current JavaScript lessons have no package-installation requirement.
+The introductory JavaScript lessons require no packages. For challenge projects, follow the setup instructions in each day's README.
 
 ## Learning tracks
 

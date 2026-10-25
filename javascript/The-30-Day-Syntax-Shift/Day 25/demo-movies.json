@@ -1,0 +1,27 @@
+[
+  {
+    "imdbID": "demo-1",
+    "Title": "A Quiet Journey",
+    "Year": "2024",
+    "Poster": "/poster.svg",
+    "Director": "Mira Vale",
+    "Actors": "Sam Rowan, Alex Finch",
+    "Plot": "A mapmaker follows an unfinished route through a valley and learns to share the journey. Fictional practice film."
+  },
+  {
+    "imdbID": "demo-2",
+    "Title": "Journey Beyond the Map",
+    "Year": "2025",
+    "Poster": "N/A",
+    "Director": "Eli Hart",
+    "Actors": "Noor Lane, Jamie Brook",
+    "Plot": "Two friends take an unexpected detour and discover a village of storytellers. Fictional practice film."
+  },
+  {
+    "imdbID": "demo-3",
+    "Title": "Journey: Missing Reel (error demo)",
+    "Year": "2026",
+    "Poster": "/poster.svg",
+    "detailFailure": true
+  }
+]

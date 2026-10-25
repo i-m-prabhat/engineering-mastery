@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 29: Dashboard Foundation</title><link rel="stylesheet" href="styles.css"><script type="module" src="solutions.mjs"></script></head><body>
+<header><p class="eyebrow">The 30-Day Syntax Shift / Day 29</p><h1>Small progress, shared.</h1><p>A local social dashboard foundation with fictional profiles.</p></header>
+<main><aside class="panel profile"><h2>Your demo profile</h2><label for="profile-select">Choose a demo profile</label><select id="profile-select"></select>
+<div id="profile-avatar" class="avatar" aria-hidden="true"></div><h3 id="profile-name"></h3><p id="profile-handle" class="hint"></p><p id="profile-bio"></p><p class="hint">Switching profiles changes the author of your next post. This is not account authentication.</p></aside>
+<div class="center"><section class="panel"><h2>Create a post</h2><form id="post-form"><fieldset id="composer-fields"><label id="composer-label" for="post-content">Share an update</label>
+<textarea id="post-content" maxlength="500" rows="3" placeholder="What did you learn today?"></textarea><div class="composer-footer"><span id="character-count" class="hint">0 / 500</span><button type="submit">Publish post</button></div></fieldset></form></section>
+<section aria-label="Local feed"><h2>Community feed</h2><p id="post-count" class="hint"></p><div id="feed"></div></section></div>
+<aside class="panel activity"><h2>Notifications</h2><p>No interaction notifications yet.</p><p class="hint">Likes, comments, and profile editing are added in Day 30. Seed posts use fixed practice dates.</p></aside>
+<p id="status" role="status">Ready to share an update.</p><button id="reset-data" type="button" hidden>Reset invalid saved demo data</button></main>
+<footer>Data stays in this browser and origin. No external posts, messages, or accounts are created.</footer></body></html>

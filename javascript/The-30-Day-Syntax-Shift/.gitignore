@@ -1,0 +1,13 @@
+# Applies to every day folder in this challenge.
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

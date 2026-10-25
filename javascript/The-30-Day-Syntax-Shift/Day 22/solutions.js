@@ -1,0 +1,12 @@
+"use strict";
+const { runAdditionDemo } = require("./add-two-numbers");
+const { runSubstringDemo } = require("./longest-substring");
+const { runContainerDemo } = require("./container-area");
+const { runThreeSumDemo } = require("./three-sum");
+const { runAnagramDemo } = require("./group-anagrams");
+runAdditionDemo();
+runSubstringDemo();
+runContainerDemo();
+runThreeSumDemo();
+runAnagramDemo();
+console.log("All five challenge demonstrations finished.");

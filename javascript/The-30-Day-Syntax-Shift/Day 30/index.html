@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 30: Social Dashboard</title><link rel="stylesheet" href="styles.css"><script type="module" src="solutions.mjs"></script></head><body>
+<header><p class="eyebrow">The 30-Day Syntax Shift / Final Project</p><h1>A little progress, together.</h1>
+<p>A fictional, local social dashboard. No external accounts or posts are created.</p></header>
+<p id="status" role="status">Use a demo profile or register a fictional one.</p><button id="reset-data" type="button" hidden>Reset invalid saved demo data</button>
+<section id="auth"><p class="notice">Practice only: passphrases are validated for length, then discarded. They are not saved or verified as credentials. Demo access selects a local identity.</p>
+<fieldset id="auth-controls"><div class="auth-grid">
+<form id="login-form" class="panel"><h2>Demo login</h2><p class="hint">Seed profiles: alex@example.test and sam@example.test. Any fictional passphrase of 4+ characters works.</p>
+<label for="login-email">Demo email</label><input id="login-email" type="email" value="alex@example.test" maxlength="120" required>
+<label for="login-password">Practice passphrase</label><input id="login-password" type="password" minlength="4" maxlength="80" autocomplete="off" required>
+<button type="submit">Enter demo</button></form>
+<form id="register-form" class="panel"><h2>Register a fictional profile</h2>
+<label for="register-username">New demo username</label><input id="register-username" minlength="3" maxlength="30" required autocomplete="off">
+<label for="register-email">New demo email</label><input id="register-email" type="email" maxlength="120" required autocomplete="off">
+<label for="register-password">New practice passphrase</label><input id="register-password" type="password" minlength="4" maxlength="80" required autocomplete="off">
+<button type="submit">Register demo profile</button></form></div></fieldset></section>
+<main id="dashboard" hidden><aside class="panel">
+<h2>Your profile</h2><label for="identity-select">Switch local demo identity</label><select id="identity-select"></select>
+<img id="profile-picture" class="profile-avatar" alt="" width="72" height="72"><h3 id="profile-name"></h3><p id="profile-email" class="hint"></p><p id="profile-bio"></p>
+<button id="logout" type="button" class="secondary">Log out of demo</button>
+<details><summary>Edit profile</summary><form id="profile-form">
+<label for="edit-username">Profile username</label><input id="edit-username" minlength="3" maxlength="30" required>
+<label for="edit-email">Profile email</label><input id="edit-email" type="email" maxlength="120" required>
+<label for="edit-bio">Profile bio</label><textarea id="edit-bio" maxlength="200" rows="3"></textarea>
+<label for="edit-avatar">Profile picture</label><select id="edit-avatar"><option value="blue">Blue demo avatar</option><option value="green">Green demo avatar</option></select>
+<button type="submit">Save profile</button></form></details></aside>
+<div><section class="panel"><h2>Create a post</h2><form id="post-form"><label id="composer-label" for="post-text">Post text</label><textarea id="post-text" rows="3" maxlength="500" placeholder="Share a learning update…"></textarea>
+<label for="post-image">Optional post image</label><select id="post-image"><option value="">No image</option><option value="study">Study desk illustration</option><option value="walk">Walking path illustration</option></select>
+<button type="submit">Publish post</button></form></section><section aria-label="Community feed"><h2>Community feed</h2><div id="feed"></div></section></div>
+<aside class="panel"><h2>Notifications</h2><p id="notification-count"></p><button id="mark-read" type="button" class="secondary">Mark all as read</button><ul id="notifications"></ul>
+<p class="hint">Only other identities' likes/comments on your posts generate notifications. Switch to the author to inspect them.</p></aside></main>
+<footer>Local storage keeps fictional profiles and feed data; session storage keeps only the selected identity. No passwords, external messages, or real authentication.</footer></body></html>
