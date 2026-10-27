@@ -31,6 +31,10 @@ The introductory JavaScript lessons require no packages. For challenge projects,
 - **JavaScript**
   - [01 — First program, variables, and data types](javascript/01-basics/README.md)
   - [02 — Conditions, comparisons, and decisions](javascript/02-conditions/README.md)
+- **Artificial intelligence**
+  - [01 — AI terminology, capabilities, and limitations](ai/01-terminology/README.md)
+  - [02 — Machine learning data, training, validation, and testing](ai/02-data-training-validation-testing/README.md)
+  - [03 — Model metrics, baselines, and error analysis](ai/03-metrics-baselines-error-analysis/README.md)
 
 ### Planned tracks
 
@@ -47,7 +51,7 @@ These tracks are roadmap goals. Content will be added incrementally; a directory
 | Security | OWASP concepts, secure sessions, authorization, API hardening | Planned |
 | DevOps | Linux, Docker, CI/CD, deployment, observability | Planned |
 | [Cloud](cloud/README.md) | Cloud foundations, core services, deployment, infrastructure as code, cost and reliability | Planned |
-| [AI](ai/README.md) | AI and machine learning foundations, model evaluation, generative AI, responsible AI | Planned |
+| [AI](ai/README.md) | AI and machine learning foundations, model evaluation, generative AI, responsible AI | In progress |
 
 See [ROADMAP.md](ROADMAP.md) for the detailed sequence and progress checklist.
 
